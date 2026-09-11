@@ -2,10 +2,6 @@
 
 **AI-powered, multi-camera ANPR and vehicle trajectory platform that connects a city's existing CCTV/ANPR network into one searchable, alerting system — instead of thousands of cameras that only record in isolation.**
 
-> Status: In development — documentation and requirements phase. Working prototype exists; production hardening in progress.
-
----
-
 ## Table of Contents
 
 - [Problem](#problem)

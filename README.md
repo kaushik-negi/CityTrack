@@ -14,7 +14,8 @@
 
 ## Problem
 
-Indian cities have deployed thousands of CCTV and ANPR cameras for traffic and security, but these cameras operate in isolated silos — each one only records and locally reads plates, with no connection to any other camera in the network. As a result, authorities have no way to search for a vehicle's movement across the city, no automatic way to detect a blacklisted vehicle unless someone is manually watching, and no aggregate view of city-wide traffic patterns — even though all of this data already exists, camera by camera, unused. Investigations that should take minutes take days, and stolen or wanted vehicles routinely pass multiple cameras without being flagged, simply because nothing is watching for them.
+Indian cities have deployed thousands of CCTV and ANPR cameras for traffic and security, but these cameras operate in isolated silos — each one only records and locally reads plates, with no connection to any other camera in the network. As a result, authorities have no way to search for a vehicle's movement across the city, no automatic way to detect a blacklisted vehicle unless someone is manually watching, and no aggregate view of city-wide traffic patterns — even though all of this data already exists, camera by camera, 
+unused. Investigations that should take minutes take days, and stolen or wanted vehicles routinely pass multiple cameras without being flagged, simply because nothing is watching for them.
 
 **Who this affects:** police doing investigations, victims waiting for their stolen vehicle to be found, commuters stuck in traffic that nobody is actively managing, and every city that has already spent money on cameras but isn't getting real value from them.
 
@@ -106,7 +107,7 @@ More documents (user stories, database design, Git workflow, testing plan) are b
 
 ## Project Status
 
-Currently in the **documentation and requirements phase**: locking down requirements, architecture, and design decisions before continuing implementation. A working prototype (OCR pipeline, trajectory API, blacklist/anomaly alerts, dashboard) already exists and runs locally; it will be hardened and extended once the documentation phase is complete.
+Currently, in the **documentation and requirements phase**: locking down requirements, architecture, and design decisions before continuing implementation. A working prototype (OCR pipeline, trajectory API, blacklist/anomaly alerts, dashboard) already exists and runs locally; it will be hardened and extended once the documentation phase is complete.
 
 **Planned next:**
 - [ ] User stories / backlog

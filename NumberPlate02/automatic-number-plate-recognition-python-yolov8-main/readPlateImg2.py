@@ -7,9 +7,9 @@ import csv
 
 # https://chatgpt.com/share/f9509eb3-a41d-46d6-8c79-d45e96715504
 
-
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\Hp\PycharmProjects\tracker\Tesseract-OCRtesseract.exe'
 # Configure pytesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Mapping dictionaries for character conversion
 dict_char_to_int = {'O': '0', 'I': '1', 'J': '3', 'A': '4', 'G': '6', 'S': '5', 'E':'8'}
@@ -231,7 +231,8 @@ def sec_countourRec(data,roi):
 def last4_countourRec(data,roi,index):
 
         config = '-c tessedit_char_whitelist=0123456789 --psm 6 --oem 3'        
-        result_data = pytesseract.image_to_data(roi, config=config, output_type=pytesseract.Output.DICT)
+        result_data = pytesseract.image_to_data(roi, config=config,
+                                                output_type=pytesseract.Output.DICT)
         for i in range(len(result_data['text'])):
             if int(result_data['conf'][i]) >= 0:  # Filter out results with confidence '-1'
                 data[index]=result_data['text'][i]
@@ -257,7 +258,8 @@ def middle_countourRec(data,roi,index):
 def last5_countourRec(data,roi):
 
         config = '-c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ --psm 6 --oem 3'
-        result_data = pytesseract.image_to_data(roi, config=config, output_type=pytesseract.Output.DICT)
+        result_data = pytesseract.image_to_data(roi, config=config,
+                                                output_type=pytesseract.Output.DICT)
         # print(result_data)
         for i in range(len(result_data['text'])):
             if int(result_data['conf'][i]) >= 0:  # Filter out results with confidence '-1'
@@ -270,7 +272,8 @@ def last5_countourRec(data,roi):
 def third_countourRec(data,roi):
 
         config = '-c tessedit_char_whitelist=0123456789 --psm 6 --oem 3'
-        result_data = pytesseract.image_to_data(roi, config=config, output_type=pytesseract.Output.DICT)
+        result_data = pytesseract.image_to_data(roi, config=config,
+                                                output_type=pytesseract.Output.DICT)
         for i in range(len(result_data['text'])):
             if int(result_data['conf'][i]) >= 0:  # Filter out results with confidence '-1'
                 data[5]=result_data['text'][i]
@@ -283,7 +286,8 @@ def Detect_Num(data,roi):
 
         config = '-c tessedit_char_whitelist=ABCDGHJKLMNOPRSTUW012345678 --psm 8 --oem 3'
         result = pytesseract.image_to_string(roi, config=config)
-        result_data = pytesseract.image_to_data(roi, config=config, output_type=pytesseract.Output.DICT)
+        result_data = pytesseract.image_to_data(roi, config=config,
+                                                output_type=pytesseract.Output.DICT)
         print(result)
         print(result_data)
         data[1] = result

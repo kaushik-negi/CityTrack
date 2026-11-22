@@ -40,7 +40,7 @@ def mainFun(value,table_update_queue, frame_update_queue):
     license_plate_detector = YOLO('models/best2.pt')
 
     # load video
-    cap = cv2.VideoCapture(f'{value}')
+    cap = cv2.VideoCapture(int(value)) if value.strip().isdigit() else cv2.VideoCapture(value)
 
     vehicles = [2, 3, 5, 7]
 

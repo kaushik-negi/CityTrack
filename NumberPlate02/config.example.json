@@ -1,0 +1,4 @@
+{
+  "firebase_credentials_file": "your-firebase-adminsdk-key.json",
+  "firebase_database_url": "https://your-project-default-rtdb.firebaseio.com/"
+}

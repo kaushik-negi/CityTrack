@@ -1,4 +1,5 @@
 
+
 traffic-monitoring-4f98e-firebase-adminsdk-fbsvc-539fa084d9.json
 
 __pycache__/
@@ -21,3 +22,6 @@ NumberPlate02/Result_get/
 
 Tesseract-OCR/
 config.json
+
+.idea/
+

@@ -25,3 +25,27 @@ config.json
 
 .idea/
 
+
+# CityTrack local development files
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.sqlite3
+*.sqlite3-*
+*.db
+*.pt
+*.webm
+*.mp4
+/cache/
+/video_results/
+/video_full_results/
+/traffic_report/
+/reports/
+/citytrack_osm_network.json
+/citytrack_evaluation.html
+/citytrack_scenario_reports.html
+/citytrack_scenario_reports.csv
+*firebase-adminsdk*.json
+*serviceAccount*.json

@@ -79,3 +79,9 @@ The original [CityTrack repository](https://github.com/kaushik-negi/CityTrack) i
 - [Leaflet](https://leafletjs.com/) and [OSMnx](https://osmnx.readthedocs.io/) are used by the map workflow. Their own licences apply.
 
 This is a release candidate, not a public licence grant. See `docs/PUBLICATION.md` before making the repository public. Use anonymous single-clip analysis and synthetic inputs; keep footage, local databases, credentials and generated individual motion records private. No real vehicle identities or locations are inferred by the prototype.
+
+## Full Highway Video Demonstration
+
+[Reproduce the 60-second highway experiment](docs/HIGHWAY_DEMO.md)
+
+![Highway traffic analytics](screenshots/highway-aggregate.png)

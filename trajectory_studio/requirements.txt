@@ -1,0 +1,6 @@
+# Optional dependencies: dashboards and automated tests use the standard library.
+# Install for OSM graph download and video processing.
+osmnx>=2,<3
+ultralytics>=8.3,<9
+imageio-ffmpeg>=0.5,<1
+numpy>=1.26,<3

@@ -1,0 +1,40 @@
+# Python and local environment
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.vscode/
+# Private data, recordings, generated outputs and model weights
+*.sqlite3*
+*.db
+*.db-*
+*.pt
+*.onnx
+*.mp4
+*.webm
+*.avi
+*.mov
+cache/
+video_results*/
+video_full_results*/
+new_video_results*/
+traffic_report*/
+reports/
+citytrack_osm_network.json
+citytrack_osm_network.tmp
+citytrack_evaluation.html
+citytrack_scenario_reports.*
+video_observations.*
+video_map.html
+# Credentials and unreviewed original code
+*firebase-adminsdk*.json
+*serviceAccount*.json
+*service-account*.json
+*.pem
+*.key
+NumberPlate02/
+*.zip

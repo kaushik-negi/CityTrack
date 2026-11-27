@@ -1,0 +1,32 @@
+[
+  {
+    "vehicle_id": "TEST-001",
+    "camera_id": "CAM-C",
+    "observed_at": "2026-01-01T09:08:00Z",
+    "confidence": 0.98
+  },
+  {
+    "vehicle_id": "TEST-001",
+    "camera_id": "CAM-A",
+    "observed_at": "2026-01-01T09:00:00Z",
+    "confidence": 0.99
+  },
+  {
+    "vehicle_id": "TEST-001",
+    "camera_id": "CAM-B",
+    "observed_at": "2026-01-01T09:04:00Z",
+    "confidence": 0.97
+  },
+  {
+    "vehicle_id": "TEST-001",
+    "camera_id": "CAM-D",
+    "observed_at": "2026-01-01T09:13:00Z",
+    "confidence": 0.96
+  },
+  {
+    "vehicle_id": "TEST-001",
+    "camera_id": "CAM-E",
+    "observed_at": "2026-01-01T09:15:00Z",
+    "confidence": 0.51
+  }
+]
